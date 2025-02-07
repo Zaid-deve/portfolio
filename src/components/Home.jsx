@@ -24,7 +24,7 @@ export default function Home() {
                             </Link>
                         </div>
                     </div>
-                    <div className="bg-hero md:h-90 md:w-90 h-75 w-75 overflow-hidden shrink-0">
+                    <div className="bg-hero md:h-90 md:w-90 sm:h-75 sm:w-75 h-65 w-65 overflow-hidden shrink-0">
                         <div className="h-100 w-100" style={{
                             background: `url(${vectorImg}) center no-repeat`,
                             backgroundSize: 'contain'

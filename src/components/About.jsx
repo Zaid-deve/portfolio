@@ -19,7 +19,7 @@ export default function About() {
                     transition={{ duration: 0.8 }}
                     className="md:w-1/2 flex justify-center"
                 >
-                    <div className="rounded-xl overflow-hidden w-60 h-80 bg-glass bg-center"
+                    <div className="rounded-xl overflow-hidden md:w-60 w-40 md:h-80 h-60 bg-glass bg-center"
                         style={{
                             background: `url(${aboutVector}) center no-repeat`,
                             backgroundSize:'100%'
@@ -52,7 +52,7 @@ export default function About() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 2, delay: index * 0.2 }}
-                                className="bg-glass p-6 rounded-lg text-center md:w-1/4 w-1/3"
+                                className="bg-glass p-6 rounded-lg text-center w-min"
                             >
                                 <h3 className="text-3xl font-bold text-amber-400">{milestone.value}+</h3>
                                 <p className="text-white font-bold text-sm mt-2">{milestone.label}</p>

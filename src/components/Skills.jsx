@@ -62,7 +62,7 @@ export default function Skills() {
                                 { icon: <DiPhp className="text-indigo-500" />, label: "PHP" },
                                 { icon: <DiNodejs className="text-green-500" />, label: "Node.js" },
                                 { icon: <DiPython className="text-blue-600" />, label: "Python" },
-                                { icon: <DiJava className="text-red-600" />, label: "Java" },
+                                // { icon: <DiJava className="text-red-600" />, label: "Java" },
                                 { icon: <DiLaravel className="text-red-500" />, label: "Laravel" },
                             ].map(({ icon, label }, index) => (
                                 <div key={index} className="flex flex-col items-center">
