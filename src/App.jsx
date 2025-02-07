@@ -12,6 +12,8 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
+import homeImg from '/src/assets/images/bg.jpg';
+
 export default function App() {
   return (
     <Router>
@@ -38,7 +40,7 @@ function Main() {
 
   return (
     <div className="h-screen w-screen flex flex-col text-white" style={{
-      background: "linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(/src/assets/images/bg.jpg) no-repeat center",
+      background: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(${homeImg}) no-repeat center`,
       backgroundSize: 'cover'
     }}>
       <div className="shrink-0">
