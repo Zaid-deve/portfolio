@@ -6,7 +6,7 @@ import {
 } from "react-icons/si";
 
 export default function Projects() {
-    const repoUrl = '/repos/users/Zaid-deve/repos';
+    const repoUrl = 'https://api.github.com/users/Zaid-deve/repos';
     const [repos, setRepos] = useState([]);
 
     const languageIcons = {
