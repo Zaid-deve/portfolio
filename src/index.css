@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Unbounded:wght@200..900&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: "Open Sans", serif;
+  user-select: none;
+  zoom: 0;
+}
+
+.text-header {
+  font-family: "Lexend Giga", serif;
+  @apply text-4xl font-extrabold text-gray-300
+}
+
+.text-logo {
+  font-family: "Unbounded", serif;
+}
+
+.bg-glass {
+  @apply bg-white/5 backdrop-blur-3xl shadow-xl;
+}
+
+.nav-icon {
+  font-size: 1.15rem;
+}
+
+.nav-icon+span {
+  font-size: 1rem;
+}
+
+@media (max-width:768px) {
+  .nav-icon {
+    font-size: 1rem !important;
+  }
+}
+
+.bg-hero {
+  border-radius: 35% 65% 49% 51% / 73% 23% 77% 27%;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.star-twelve {
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.star-twelve * {
+  z-index: 1;
+}
+
+
+.star-twelve::before,
+.star-twelve::after {
+  @apply bg-white/7 backdrop-blur-3xl shadow-xl;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80%;
+  width: 80%;
+  transition: all .9s ease;
+  border-radius: 4px;
+}
+
+.star-twelve::before {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.star-twelve::after {
+  transform: translate(-50%, -50%) rotate(170deg);
+}
+
+.star-twelve:hover::before {
+  transform: translate(-50%, -50%) rotate(-90deg) scale(1.2);
+}
+
+.star-twelve:hover::after {
+  transform: translate(-50%, -50%) rotate(360deg) scale(1.2);
+}
