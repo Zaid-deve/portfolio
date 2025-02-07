@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/repos/(.*)",
+            "dest": "https://api.github.com/$1"
+        }
+    ]
+}
