@@ -1,6 +1,6 @@
 import {
     DiJavascript, DiReact, DiHtml5, DiCss3, DiBootstrap,
-    DiPhp, DiNodejs, DiPython, DiJava, DiLaravel,
+    DiPhp, DiNodejs, DiPython, DiLaravel,
     DiMongodb, DiMysql, DiPostgresql, DiFirebase,
     DiGit, DiGithub, DiVisualstudio, DiNpm,
     DiNodejsSmall
